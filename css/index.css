@@ -1,0 +1,160 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+
+body { 
+  margin: 0px;
+  padding: 0px;
+  background-image: url(../img/ash-minimalism-wallpaper-removebg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2062b3;
+}
+
+button {
+  display: inline-block;
+  background-color: #f1b53b;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: linear-gradient(236.85deg, #000000 30.26%, #807C7C 98.03%);
+  font-family: 'Silkscreen', cursive;
+  text-align: center;
+  font-size: 12px;
+  width: 100px;
+  height: 55px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+    background-color: blue;
+    transition: 1s;
+    color: white;
+}
+
+.container {
+  margin-top: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  perspective: 1000px;
+}
+
+.container:hover .card{
+  transform: rotateY(180deg);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  transform-style: preserve-3d ;
+  transition: all 1.5s ease;
+}
+
+.borda-card-front {
+  position: absolute;
+  backface-visibility: hidden;
+  margin-top: 200px;
+  background:linear-gradient(236.85deg, #083D81 30.26%, #5C8DCC 98.03%);
+  padding: 20px;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+}
+
+.card-front {
+  padding: 30px;
+  width: 300px;
+  height: 530px;
+  text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(236.85deg, #1269D6 30.26%, #86B6F2  98.03%);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.borda-card-back {
+  position: absolute;
+  padding: 20px;
+  margin-top: 200px;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  background-color: #083D81;
+}
+
+.card-back{
+  text-align: center;
+  background-image: url(../img/28-Images-of-Pokemon-Battle-Template-Water-Backgrounds-.png);
+  background-size: cover;
+  width: 360px;
+  height: 590px;
+  background-color: #083D81 ;
+}
+
+.tela {
+  background-image: url(../img/iceTexture.png);
+  margin-top: 30px;
+  background-color: white;
+  border: 2px solid;
+  border:linear-gradient(236.85deg, #000000 30.26%, #807C7C 98.03%);
+  border-radius: 10px
+}
+
+.descricao {
+  background-color: #F5E7E4;
+}
+
+input {
+  border-radius: 5px;
+}
+h2 {
+  background:linear-gradient(#9F9791,#eaeaea,#9F9797);
+  margin: 0px;
+  border: 1px solid black;
+}
+
+h1 {
+  background-image: linear-gradient(to right top, #0f1b42, #5d275c, #a3355a, #d35d43, #de9921);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  margin: 0px;
+}
+
+#pokemon {
+  margin-top: 20px;
+  text-align: center;
+  height: 30px;
+}
+
+img {
+  height: 200px;
+}
+
+#pokemon-logo {
+  margin-top: 60px;
+  width:350px;
+  height:150px;
+}
+
+#pokebola {
+  margin-top: 30px;
+  width:150px;
+  height:150px
+}
+
+@media screen and (max-width: 1000px){
+  body{
+    background-image: url(../img/blue-background.jpg);
+  }
+
+}
+
